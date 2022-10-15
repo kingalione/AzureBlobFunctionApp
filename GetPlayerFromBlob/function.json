@@ -1,0 +1,24 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "route": "GetPlayerFromBlob/{id?}",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get"]
+    },
+    {
+      "type": "blob",
+      "direction": "in",
+      "name": "playerBlobIn",
+      "path": "players/in/player-{id}.json"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "scriptFile": "../dist/GetPlayerFromBlob/index.js"
+}

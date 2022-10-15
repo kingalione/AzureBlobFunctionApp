@@ -26,3 +26,6 @@ Content-Type: application/json
       "country": "usa"
   }
 }  
+
+###
+GET http://localhost:7071/api/GetPlayerFromBlob/
