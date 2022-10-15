@@ -1,0 +1,14 @@
+### Sample Request
+
+POST http://localhost:7071/api/StorePlayerWithBlobOutput
+Content-Type: application/json
+
+{
+   "id": "{{$guid}}",
+   "nickName": "Scarlet Witch 2",
+   "email":"wanda.maximoff2@avengers.com",
+   "location": {
+       "region": "novi grad",
+       "country": "sokovia"
+   }
+}
