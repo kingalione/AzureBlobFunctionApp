@@ -12,3 +12,17 @@ Content-Type: application/json
        "country": "sokovia"
    }
 }
+
+#####
+POST http://localhost:7071/api/StorePlayerWithBlobOutput
+Content-Type: application/json
+
+{
+  "id": "{{$guid}}",
+  "nickName": "Hulk",
+  "email":"bruce.banner@avengers.com",
+  "location": {
+      "region": "massachusetts",
+      "country": "usa"
+  }
+}  

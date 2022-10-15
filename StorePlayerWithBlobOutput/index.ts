@@ -10,7 +10,7 @@ const httpTrigger: AzureFunction = async function (
   if (req.body) {
     context.bindings.playerBlob = req.body;
     responseStatusCode = 201;
-    responseMessage = "Player data created in Blob storage.";
+    responseMessage = `Player data with id ${req.body.id} created in Blob storage.`;
 
     context.res = {
       status: responseStatusCode,
